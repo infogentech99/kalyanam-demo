@@ -1,8 +1,6 @@
 "use client";
 import { useEffect, useState, useRef, useMemo } from "react";
-
 import RoseHeroTemp from "@/components/RoseHeroTemp";
-
 import CoupleMessage from "@/components/CoupleMessage";
 import MarriageCountdown from "@/components/MarriageCountdown";
 
@@ -142,7 +140,7 @@ export default function Home() {
         {playing ? "⏸" : "▶"}
       </button>
 
-      <audio ref={audioRef} src="/assets/background_song_muslim.mp3" loop preload="auto" playsInline />
+      <audio ref={audioRef} src="/assets/Kalyanam_wedding_song.mp3" loop preload="auto" playsInline />
 
 
       {/* hero section */}
@@ -164,7 +162,7 @@ export default function Home() {
 
           </h2>
 
-          <div className="flex flex-col items-center text-center gap-6 pt-20 md:pt-35 lg:pt-80 mt-140 md:mt-40 lg:mt-780 3xl:mt-900">
+          <div className="flex flex-col items-center text-center gap-6 pt-20 md:pt-35 lg:pt-80 mt-170 md:mt-40 lg:mt-780 3xl:mt-900">
 
             <p className="jacques-francois text-base md:text-2xl lg:text-3xl text-[#FFF5B9] text-center">ॐ श्री गणेशाय नम</p>
             <img src="/assets/ganesh.webp" alt="ganesh" className="w-25 h-29 md:w-34 md:h-38 lg:w-41 lg:h-53" />
@@ -174,7 +172,7 @@ export default function Home() {
                 With the heavenly blessings of <br /> Shri Rajesh Pillai & Shrimati Sunita Pillai
             </h2>
 
-            <hr className="lg:w-24 w-16 border-[#FFF5B9] my-4" />
+            <hr className="lg:w-24 w-16 border-[#FFF5B9] md:my-4" />
             <h2 className="text-[#FFF5B9] text-sm md:text-xl lg:text-[26px] jacques-francois">
                 Shri Amit Gowda & Shrimati Vaishali Gowda
             </h2>

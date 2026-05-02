@@ -12,7 +12,12 @@ export default function FloatingPetal({
 
   const petalValues = useMemo(() => {
 
-    const duration = 20 + Math.random() * 15;
+    const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
+
+    const duration = isDesktop
+      ? 40 + Math.random() * 30   // longer for desktop
+      : 20 + Math.random() * 15;
+
     const delay = Math.random() * 10;
 
     const scale =
@@ -25,6 +30,7 @@ export default function FloatingPetal({
     return { duration, delay, scale, rotate };
 
   }, []);
+
 
   return (
     <img
