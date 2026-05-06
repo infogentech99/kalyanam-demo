@@ -144,15 +144,15 @@ export default function Home() {
 
 
       {/* hero section */}
-      <div className="bg-[url('/assets/bg_respo.webp')] md:bg-[url('/assets/bg.webp')] bg-cover bg-no-repeat
-                      bg-top md:bg-center w-full min-h-screen overflow-hidden relative">
+      <div className="bg-[url('/assets/bg_respo.webp')] md:bg-[url('/assets/bg_one.webp')] bg-cover bg-no-repeat
+                      bg-top md:bg-center w-full overflow-hidden relative">
 
         <RoseHeroTemp />
         {/* <FallingLamps /> */}
-        <div className="pt-2 md:pt-34 lg:pt-54 3xl:pt-40 relative z-10">
+        <div className="pt-6 md:pt-34 lg:pt-54 3xl:pt-90 relative z-10">
         
           <h2 className="text-[#C47E39] text-center leading-tight text-3xl md:text-5xl lg:text-[64px]  
-                           flex flex-col items-center gap-y-0 lg:gap-y-5">
+                           flex flex-col items-center gap-y-0 lg:gap-y-5 pb-170 md:pb-780 lg:pb-780 3xl:pb-950">
 
             <span className="jacques-francois">VISHNU</span>
 
@@ -161,8 +161,8 @@ export default function Home() {
             <span className="jacques-francois">KAVYA</span>
 
           </h2>
-
-          <div className="flex flex-col items-center text-center gap-6 pt-20 md:pt-35 lg:pt-80 mt-170 md:mt-40 lg:mt-780 3xl:mt-900">
+                          
+          <div className="flex flex-col items-center text-center gap-6 pt-20 md:pt-35 lg:pt-80 3xl:pt-100">
 
             <p className="jacques-francois text-base md:text-2xl lg:text-3xl text-[#FFF5B9] text-center">ॐ श्री गणेशाय नम</p>
             <img src="/assets/ganesh.webp" alt="ganesh" className="w-25 h-29 md:w-34 md:h-38 lg:w-41 lg:h-53" />
@@ -198,7 +198,7 @@ export default function Home() {
               <br />  KAVYA
             </h2>
 
-            <p className="text-[#FFF5B9] jacques-francois text-sm md:text-xl lg:text-[26px] mt-2 3xl:mt-12">
+            <p className="text-[#FFF5B9] jacques-francois text-sm md:text-xl lg:text-[26px] mt-2 lg:mt-6 3xl:mt-12">
                 Daughter of <br /> Shri Mahesh Shetty & Shrimati Asha Shetty
             </p>
 
@@ -209,12 +209,12 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center mt-15 md:mt-25 lg:mt-40">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-24 gap-16 pb-40">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-24 3xl:gap-40 pb-40">
               {events.map((event, i) => (
                 <div key={i} className="flex flex-col items-center text-center">
                   <img
                     src={event.image}
-                    className="lg:w-80 w-75 sm:w-76 h-auto"
+                    className="w-75 h-auto md:w-76 lg:w-80 3xl:w-95"
                   />
 
                   <h2 className="text-[#FFF5B9] jacques-francois text-3xl md:text-2xl lg:text-[42px] mt-4">
@@ -243,7 +243,7 @@ export default function Home() {
         
 
 
-          <div className="bg-[url('/assets/bg_two.webp')] bg-cover bg-no-repeat w-full h-86 md:h-181 lg:h-335 3xl:h-422
+          <div className="bg-[url('/assets/bg_second.webp')] bg-cover bg-no-repeat w-full h-96 md:h-181 lg:h-335 3xl:h-422
                           overflow-hidden relative">
             {/* Center Text */}
             <div className="flex flex-col justify-center items-center text-center pt-30 pl-50 md:pt-60 md:pl-110 lg:pt-115 lg:pl-210 3xl:pt-145 3xl:pl-240">
@@ -268,7 +268,7 @@ export default function Home() {
       <CoupleMessage />
 
       <div className=" bg-[url('/assets/bg_fourth.webp')] bg-cover bg-no-repeat ">
-        <div className="h-119 md:h-251 lg:h-467 3xl:h-589 flex flex-col items-center">
+        <div className="h-132 md:h-251 lg:h-467 3xl:h-589 flex flex-col items-center">
           <img src="/assets/couple_logo.webp" alt="logo" width={250} height={300} className="w-25 h-23 md:w-43 md:h-42 lg:w-75 lg:h-73 mt-16 md:mt-33 lg:mt-65 3xl:mt-82" />
         </div>
       </div>
